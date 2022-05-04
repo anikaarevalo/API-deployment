@@ -57,8 +57,8 @@ and properly staged in the market.
  **(Piperline 2)** Multiple regression model: RSquared performance metric score at 22%
  ![This is a screenshot](https://github.com/anikaarevalo/API-deployment/blob/d26d04dd381e280b38217da79f59ba71bc1109e0/assets/r2score.png)
  
-**(Pipeline 3)** Immo Eliza house price calculator interface -->THIS IS A DUMMY IMAGE :)
-<img width="1129" alt="mean error (1)" src="https://user-images.githubusercontent.com/98814867/164479715-45bcc07c-8a2e-4a1a-938b-15db9b6dd06c.png">
+**(Pipeline 3)** Immo Eliza house price calculator interface -->TO BE INSERTED :)
+
                                                                                               
 ## Contributor
 Anika Arevalo, Junior Data Scientist⚛️ (BeCode, Ghent)
