@@ -55,7 +55,7 @@ and properly staged in the market.
 ![heatmap](https://github.com/anikaarevalo/GNT-Arai-3/blob/bf5041f64dfe9cf7ce45dbc060a06f7c0b74e4f1/content/00.projects/2ndindproj/assets/heatmap.png)
   
  **(Piperline 2)** Linear regression model: Confusion matrix and classification report -->THIS IS A DUMMY IMAGE :)
-  <img width="1050" alt="Screenshot_2022-04-21_at_12 13 24" src="https://user-images.githubusercontent.com/98814867/164474202-8fd704c5-2a8c-4640-b9bc-61b5144f77fb.png"> 
+  <img width="1050" alt="https://github.com/anikaarevalo/API-deployment/blob/d26d04dd381e280b38217da79f59ba71bc1109e0/assets/r2score.png"> 
  
 **(Pipeline 3)** Immo Eliza house price calculator interface -->THIS IS A DUMMY IMAGE :)
 <img width="1129" alt="mean error (1)" src="https://user-images.githubusercontent.com/98814867/164479715-45bcc07c-8a2e-4a1a-938b-15db9b6dd06c.png">
