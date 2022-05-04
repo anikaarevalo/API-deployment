@@ -43,6 +43,7 @@ The following software and tools were utilised in this project:
 
 3. **Web application deployment**
 - Flask 2.1.2
+- Bootstrap and HTML
 - Git Hub CLI
 - Heroku CLI 7.60.2
 
