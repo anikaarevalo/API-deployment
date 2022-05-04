@@ -74,4 +74,8 @@ in order to apply methods and strategies in data perparation, machine learning m
 
 The main goal and focus of this project is to deploy software using web application tools such as Flask and Heroku. **In another opportunity,
 I would love to have the chance to improve this prototype** by optimising the machine learning model that I had implemented (i.e. **including categorical
-variables in combination with numerical variables** in training and testing the model and **improving its performance metrics**). Suggestions are welcome. Thank you! 
+variables in combination with numerical variables** in training and testing the model and **improving its performance metrics**). 
+
+The interface of the house price calculator could also be improved.
+
+Suggestions are welcome. Thank you! 
