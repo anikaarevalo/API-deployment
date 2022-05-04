@@ -10,19 +10,22 @@ a **usable and reliable predictive house pricing calculator**.
 
 <img width="668" alt="pipeline 2022-04-21 at 15 49 28" src="https://github.com/anikaarevalo/GNT-Arai-3/blob/962385ab35cfcac06c8381d028553eacc343f2b7/content/00.projects/2ndindproj/assets/Screenshot%202022-05-01%20at%2010.28.19.png">
 
-**Pipeline 1:** DATA PREPARATION  
+**Pipeline 1:** 
+DATA PREPARATION  
 
 With the dataset that was previously scraped, the aim of the first pipeline is to **preprocess the data resulting to improved data quality**. 
 Problemmatic/unsuitable data were eliminated so that the ***legitimate observations were captured***; the ***possible features (attributes) 
 extracted***; and the ***label, extrapolated***.
 
-**Piperline 2:** PREDICTIVE MODELLING
+**Piperline 2:** 
+PREDICTIVE MODELLING
 
 Using quality data, I initialised a **machine learning workflow** to create and train a **linear regression predictive model**.
 Additionally, I subjected the model under evaluation, with the aim of configuring metrics that allowed the model to achieve the highest level
 of reliability. 
 
-**Pipeline 3:** WEB API DEPLOYMENT
+**Pipeline 3:** 
+WEB API DEPLOYMENT
 
 Lastly, I created an **Application Programming Interface (API)** so that Immo Eliza's web-developers could create a website around the software.
 The API, in particular, asks a user to provide certain information about a new property (features) and returns the estimated price using the 
