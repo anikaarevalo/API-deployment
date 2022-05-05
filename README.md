@@ -1,4 +1,4 @@
-## API deployment: Immo Eliza house price calculator🏠🔢💶
+## API deployment: Immo Eliza house price calculator 🏠🔢💶
 
 ### Description
 **Immo Eliza**, a Belgian-based real esate company, wants to optimise their house pricing scheme. When a new property enters the market, they want
