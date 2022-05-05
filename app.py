@@ -6,22 +6,14 @@
 # In[1]:
 
 
-import numpy as np
+
 import pandas as pd
 import sys
 import json
-import joblib
-import importlib.util  
-#sys.path.append('./model')
-#sys.path.append('./preprocessing')
+import joblib 
 sys.path.append('./predict')
-#import preprocessing.cleaning_data as cleaning_data
 import predict.predict as prediction
-#from preprocessing.cleaning_data import checkData
-#from preprocessing.cleaning_data import creatingDummies
-from predict.predict import user_input
-#import preprocessing.cleaning_data as cleaning_data
-#import predict.prediction as prediction 
+from predict.predict import predict
 
 from flask import Flask, request, jsonify, render_template
 
@@ -44,31 +36,13 @@ def predict():
             surface_area =  request.form.get('surface_area') 
 
             data = {
-             'Number of bedrooms':str(bedrooms), 'Living area':str(living_area),'Surface area land':str(surface_area) 
+             'Number of bedrooms':str(number_rooms), 'Living area':str(living_area),'Surface area land':str(surface_area) 
             }
-           
-            if (validData == False):
-                return render_template("result.html", result="Please fill in all fields")
             
-            else:
-                df = pd.DataFrame(data, index=list(range(len(data))))
-                df = clean.creatingDummies(df)
-                ##########################
-                # passing the file name and path as argument
-                spec1 = importlib.util.spec_from_file_location(
-                    "prediction", "./predict/predict.py") 
-
-                # importing the module as clean
-                predicter = importlib.util.module_from_spec(spec1)       
-                spec1.loader.exec_module(predicter)
-                # calling predicted price
-                predicted_price = predicter.predict_price(df)[0]
-            ##################################    
-               
-               # predicted_price = prediction.predict(df)[0]
-                
-                result_price = "The price of your property is: "+ str("{:,.2f}".format(predicted_price)) + " EUR"
-                return render_template("result.html", result = result_price )
+            
+            df = pd.DataFrame(data, index=list(range(len(data))))
+            result_price = predict(df)
+            return render_template("result.html", result = result_price )
 
     if request.method == 'GET':
         return render_template("index.html")
