@@ -1,6 +1,6 @@
 ## API Deployment: Immo Eliza house price calculator🏠🔢💶
 
-## Description
+### Description
 **Immo Eliza**, a Belgian-based real esate company, wants to optimise their house pricing scheme. When a new property enters the market, they want
 their staff to have a straightforward tool, **a web application**, where they can simply **enter a set of attributes** and the said software would 
 **output a recommended sale price of a new property listing**. 
@@ -31,7 +31,7 @@ Lastly, I created an **Application Programming Interface (API)** so that Immo El
 The API, in particular, asks a user to provide certain information about a new property (features) and returns the estimated price using the 
 embedded linear regression model.
 
-## Installation
+### Installation
 The following software and tools were utilised in this project:
 1. **Data analysis**
 - Python 3.9 or higher
@@ -47,13 +47,13 @@ The following software and tools were utilised in this project:
 - Git Hub CLI
 - Heroku CLI 7.60.2
 
-## Usage
+### Usage
 This is a plug-and-play web-based app that lets Immo Eliza listing agents help sellers price their property before any new listing can be released 
 and properly staged in the market. 
 
 **For this project, I have private individual (ordinary) sellers in mind who are likely to sell single property homes.** 
 
-## Visuals
+### Visuals
 
 **(Pipeline 1)** Visual EDA, a heat map, showing the correlations among the numerical variables forming the baseline data frame
 <img width="400" src="https://github.com/anikaarevalo/GNT-Arai-3/blob/bf5041f64dfe9cf7ce45dbc060a06f7c0b74e4f1/content/00.projects/2ndindproj/assets/heatmap.png">
@@ -64,15 +64,15 @@ and properly staged in the market.
 **(Pipeline 3)** Immo Eliza house price calculator interface 
 <img width="800" src="https://github.com/anikaarevalo/API-deployment/blob/ddab2155ea791127385772410308572c59bf274c/assets/Immo%20Eliza%20UI.png">
                                                                                               
-## Contributor
+### Contributor
 Anika Arevalo, Junior Data Scientist⚛️ (BeCode, Ghent)
 
-## Timeline
+### Timeline
 6 days
 
 28/04/2022 - 05/05/2022
 
-## Personal Situation
+### Personal Situation
 BeCode, in partnership with a fictitious client Immo Eliza, assigned this project to me, an AI data ops learner, 
 in order to apply methods and strategies in data perparation, machine learning modelling, and web application deployment. 
 
