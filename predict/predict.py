@@ -12,12 +12,12 @@ from sklearn.model_selection import train_test_split
 from sklearn import metrics
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
-import pickle
+import joblib
 
 # A function that predicts label (price) when user inputs according to the parameters of the linear regression model
 def predict(user_data):    
     
-    LR =  pickle.load(open('predict.sav', 'rb'))
+    LR =  joblib.load('predict.sav')
 
     # Predicting on test set
     y_prediction =  LR.predict(user_data)
