@@ -28,7 +28,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # Accessing the cleaned data set (originally web scraped from immoweb.be) of house listings from a csv file 
 # and passing it into a pandas dataframe
 # Printing all the field names of all the columns in the data.
-with open('/Users/anix/GNT-Arai-3/content/00.projects/2ndindproj/preprocessing/baseline.csv', 'r') as csvfile:
+with open('/Users/anix/API-deployment/preprocessing/baseline.csv', 'r') as csvfile:
     df = pd.read_csv(csvfile, index_col=[0])
 print(df.columns.values) 
 
