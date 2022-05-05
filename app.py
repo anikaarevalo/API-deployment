@@ -11,8 +11,6 @@ import pandas as pd
 import sys
 import json
 import joblib 
-sys.path.append('./predict')
-import predict.predict as prediction
 from predict.predict import predict
 
 from flask import Flask, request, jsonify, render_template
@@ -49,7 +47,7 @@ def predict():
     
 
 if __name__ == '__main__':
-   app.run(debug=True)
+   app.run(debug=True, port=8000)
 
 
 # In[ ]:
