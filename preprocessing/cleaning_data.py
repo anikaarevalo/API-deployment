@@ -172,7 +172,7 @@ def preprocess(df):
     new_df['Living area'] = new_df['Living area'].apply(StringtoInt)
     new_df['Surface area land'] = new_df['Surface area land'].apply(StringtoInt)
     
-    # Implementing subfunction that drops undesired columns in accordance with baseline data frame fields
+    # Implementing subfunction that drops undesired columns following the baseline data frame fields
     new_df = DropColumns(new_df)
 
     # Implementing subfunction that returns new data frame after discarding unkown or empty fields from some columns
