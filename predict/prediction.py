@@ -48,7 +48,7 @@ def test():
     print('root_mean_squared error of is==', np.sqrt(mean_squared_error(y_test,y_prediction)))
     
     # Saving the model
-    pickle.dump(LR, open('/Users/anix/API-deployment/predict/prediction.pickle', 'wb'))
+    pickle.dump(LR, open('predict/prediction.pickle', 'wb'))
     print('Model saved.')
     
 
