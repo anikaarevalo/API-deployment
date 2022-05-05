@@ -17,7 +17,7 @@ import joblib
 # A function that predicts label (price) when user inputs according to the parameters of the linear regression model
 def predict(user_data):    
     
-    LR =  joblib.load('predict.sav')
+    LR =  joblib.load('./predict/predict.sav')
 
     # Predicting on test set
     y_prediction =  LR.predict(user_data)
