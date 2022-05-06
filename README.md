@@ -5,7 +5,7 @@
 their staff to have a straightforward tool, **a web application**, where they can simply **enter a set of attributes** and the said software would 
 **output a recommended sale price of a new property listing**. 
 
-As a data scientist contracted for the job, my task is to build and deploy **three central pipelines** with the goal of delivering to my client a
+As a data scientist contracted for the job, my task is to build and deploy **three central pipelines** with the goal of delivering to my client
 a **usable and reliable predictive house pricing calculator**. 
 
 <img width="668" alt="pipeline 2022-04-21 at 15 49 28" src="https://github.com/anikaarevalo/GNT-Arai-3/blob/962385ab35cfcac06c8381d028553eacc343f2b7/content/00.projects/2ndindproj/assets/Screenshot%202022-05-01%20at%2010.28.19.png">
