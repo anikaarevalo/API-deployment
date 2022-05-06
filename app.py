@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def alive():
-    return '<h2>Im alive</h2>'
+    return render_template("index.html")
 
 
 @app.route('/predict', methods=['POST','GET'])
@@ -39,7 +39,7 @@ def predict():
             
             
             df = pd.DataFrame(data, index=list(range(len(data))))
-            result_price = (df)[0]
+            result_price = predictprice(df)[0] 
             return render_template("index.html", result = result_price)
 
     if request.method == 'GET':
