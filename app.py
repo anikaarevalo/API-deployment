@@ -11,7 +11,7 @@ import pandas as pd
 import sys
 import json
 import joblib 
-from predict.predict import predict
+from predict.predictfile import predictprice
 
 from flask import Flask, request, jsonify, render_template
 
@@ -19,13 +19,13 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def alive():
-    return '<h1>This is server is alive!</h1>'
+    return '<h2>Im alive</h2>'
 
 
 @app.route('/predict', methods=['POST','GET'])
 def predict():
     """
-    This function will be use for the prediction of property
+    This function will be used for the prediction of property
     """
     
     if request.method == 'POST':
@@ -39,8 +39,8 @@ def predict():
             
             
             df = pd.DataFrame(data, index=list(range(len(data))))
-            result_price = predict(df)
-            return render_template("result.html", result = result_price )
+            result_price = (df)[0]
+            return render_template("index.html", result = result_price)
 
     if request.method == 'GET':
         return render_template("index.html")

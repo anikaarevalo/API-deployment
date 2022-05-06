@@ -34,6 +34,7 @@
     
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body class="bg-light">
     
@@ -42,14 +43,14 @@
     <div class="py-5 text-center">
       
       <h1>Immo Eliza</h1>
-      <h4>House price calculator</h4>
+      <h3>House price calculator</h3>
       <p class="lead">Please enter the requested values in order to receive an estimated sale price</p>
     </div>
 
     <div class="row g-5">
       
       <div class="col-md-12 col-lg-12">
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" action="{{url_for('predict')}}" method='post'>
           <div class="row g-3">
             
 
@@ -58,21 +59,21 @@
               <label for="zip" class="form-label">Number of bedrooms</label>
               <input type="text" class="form-control" id="zip" name="bedrooms" placeholder="Enter a value between 1 and 5" required>
               <div class="invalid-feedback">
-                Enter a value between 1 and 5
+                
               </div>
             </div>
             <div class="col-12">
               <label for="zip" class="form-label">Living area in square meters</label>
               <input type="text" class="form-control" id="zip" name="living_area" placeholder="Enter a value between 70 and 300" required>
               <div class="invalid-feedback">
-                Enter a value between 70 and 300
+               
               </div>
             </div>
             <div class="col-12">
               <label for="zip" class="form-label">Surface area land in square meters</label>
               <input type="text" class="form-control" id="zip" name="surface_area" placeholder="Enter a value between 50 and 1000" required>
               <div class="invalid-feedback">
-                Enter a value between 50 and 1000
+                
               </div>
             </div>
 

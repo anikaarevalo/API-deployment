@@ -15,7 +15,7 @@ from sklearn.metrics import mean_squared_error
 import joblib
 
 # A function that predicts label (price) when user inputs according to the parameters of the linear regression model
-def predict(user_data):    
+def predictprice(user_data):    
     
     LR =  joblib.load('./predict/predict.sav')
 
@@ -26,5 +26,5 @@ def predict(user_data):
     return y_prediction
 
 # Calling the prediction of the label (price) after user data is put in in the form of a numpy array
-predict(np.array([3,167,370]).reshape(1, -1))
+#predict(np.array([3,167,370]).reshape(1, -1))
 
