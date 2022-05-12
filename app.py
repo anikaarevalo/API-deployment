@@ -39,7 +39,8 @@ def predict():
             
             
             df = pd.DataFrame(data, index=list(range(len(data))))
-            result_price = predictprice(df)[0] 
+            res = predictprice(df)[0]
+            result_price = round(res,2)
             return render_template("index.html", result = result_price)
 
     if request.method == 'GET':
